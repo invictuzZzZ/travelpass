@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#060606">
-<meta name="description" content="Elias — in Paris for one night. Text me.">
+<meta name="description" content="Elias — currently in Marbella / Málaga, then Lisbon and Pipa. Text me.">
 <title>Where's Elias</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -428,6 +428,34 @@
   }
   .pip[aria-current="true"] { width: 15px; border-radius: 3px; background: var(--pip-on); }
 
+  /* ---------- next stops ---------- */
+  .next-stops {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: -2px;
+    padding: 12px 14px;
+    border: 1px solid var(--line-soft);
+    border-radius: 14px;
+    background: var(--wash);
+  }
+  .next-stops-title {
+    margin: 0;
+    font-size: 0.58rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+  .next-stop {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .next-stop strong { font-size: 0.82rem; font-weight: 500; color: var(--ink); }
+  .next-stop span { font-size: 0.72rem; font-weight: 300; color: var(--dim); text-align: end; }
+
   /* ---------- actions ---------- */
   .cta {
     display: flex;
@@ -638,7 +666,7 @@
       <div class="status">
         <p class="eyebrow">
           <span class="dot" aria-hidden="true"></span>
-          <span data-i18n="eyebrow">PARIS · ONE NIGHT ONLY</span>
+          <span data-i18n="eyebrow">MARBELLA · UNTIL MONDAY</span>
         </p>
         <button class="skin" id="skin" type="button" aria-label="Switch to light mode">
           <svg class="sun" width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true">
@@ -662,11 +690,23 @@
         </div>
       </section>
 
-      <h1 class="heading" data-i18n="heading">I&rsquo;m in Paris.</h1>
+      <h1 class="heading" data-i18n="heading">I&rsquo;m in Marbella.</h1>
 
-      <p class="lede" data-i18n="body">Just tonight. If you want to make some nice plans — party, dinner, drinks, events or whatever — text me.</p>
+      <p class="lede" data-i18n="body">Around Marbella and Málaga until Monday, 28 September. If you want to make some nice plans — beach, dinner, drinks, events or whatever — text me.</p>
 
       <p class="secondary" data-i18n="secondary">Always down to meet interesting people and discover good places.</p>
+
+      <section class="next-stops" aria-label="Next destinations" data-i18n-aria="nextStopsAria">
+        <p class="next-stops-title" data-i18n="nextStopsTitle">NEXT</p>
+        <div class="next-stop">
+          <strong>Lisbon, Portugal</strong>
+          <span data-i18n="lisbonDates">4–6 Oct 2026</span>
+        </div>
+        <div class="next-stop">
+          <strong>Pipa, Brazil</strong>
+          <span data-i18n="pipaDates">6 Oct–30 Nov 2026</span>
+        </div>
+      </section>
 
       <a class="cta" id="mainCta" href="https://wa.me/34644075065" target="_blank" rel="noopener noreferrer" data-i18n-aria="ctaAria">
         <span data-i18n="cta">Text me on WhatsApp</span>
@@ -725,7 +765,7 @@
 
       <div class="foot">
         <p class="clock">
-          <span data-i18n="timeLabel">Paris time</span>
+          <span data-i18n="timeLabel">Marbella time</span>
           <time id="clock" datetime="">&mdash;</time>
         </p>
         <div class="langs" role="group" id="langs" aria-label="Language">
@@ -759,28 +799,28 @@
           and the "<city> time" label.
        ============================================================ */
     var NOW = {
-      tz: "Europe/Paris",
+      tz: "Europe/Madrid",
       copy: {
-        en: { eyebrow: "PARIS · ONE NIGHT ONLY",
-              heading: "I’m in Paris.",
-              body: "Just tonight. If you want to make some nice plans — party, dinner, drinks, events or whatever — text me.",
-              timeLabel: "Paris time" },
-        de: { eyebrow: "PARIS · NUR HEUTE NACHT",
-              heading: "Ich bin in Paris.",
-              body: "Nur heute Nacht. Wenn du Lust auf gute Pläne hast — Party, Dinner, Drinks, Events oder was auch immer — schreib mir.",
-              timeLabel: "Uhrzeit in Paris" },
-        fr: { eyebrow: "PARIS · UNE SEULE NUIT",
-              heading: "Je suis à Paris.",
-              body: "Juste ce soir. Si tu veux faire des plans sympas — soirée, dîner, verres, événements ou autre — écris-moi.",
-              timeLabel: "Heure à Paris" },
-        it: { eyebrow: "PARIGI · SOLO UNA NOTTE",
-              heading: "Sono a Parigi.",
-              body: "Solo stanotte. Se ti va di fare qualcosa di bello — festa, cena, drink, eventi o qualsiasi altra cosa — scrivimi.",
-              timeLabel: "Ora a Parigi" },
-        ar: { eyebrow: "باريس · ليلة واحدة فقط",
-              heading: "أنا في باريس.",
-              body: "الليلة فقط. إذا كنت ترغب في القيام بخطط ممتعة — حفلة، عشاء، مشروبات، فعاليات أو أي شيء آخر — راسلني.",
-              timeLabel: "التوقيت في باريس" }
+        en: { eyebrow: "MARBELLA · UNTIL MONDAY",
+              heading: "I’m in Marbella.",
+              body: "Around Marbella and Málaga until Monday, 28 September. If you want to make some nice plans — beach, dinner, drinks, events or whatever — text me.",
+              timeLabel: "Marbella time" },
+        de: { eyebrow: "MARBELLA · BIS MONTAG",
+              heading: "Ich bin in Marbella.",
+              body: "Bis Montag, 28. September, bin ich in Marbella und Málaga. Wenn du Lust auf gute Pläne hast — Strand, Dinner, Drinks, Events oder was auch immer — schreib mir.",
+              timeLabel: "Uhrzeit in Marbella" },
+        fr: { eyebrow: "MARBELLA · JUSQU’À LUNDI",
+              heading: "Je suis à Marbella.",
+              body: "Je suis entre Marbella et Málaga jusqu’au lundi 28 septembre. Si tu veux faire des plans sympas — plage, dîner, verres, événements ou autre — écris-moi.",
+              timeLabel: "Heure à Marbella" },
+        it: { eyebrow: "MARBELLA · FINO A LUNEDÌ",
+              heading: "Sono a Marbella.",
+              body: "Sono tra Marbella e Málaga fino a lunedì 28 settembre. Se ti va di fare qualcosa di bello — spiaggia, cena, drink, eventi o altro — scrivimi.",
+              timeLabel: "Ora di Marbella" },
+        ar: { eyebrow: "ماربيا · حتى يوم الاثنين",
+              heading: "أنا في ماربيا.",
+              body: "سأكون بين ماربيا ومالقة حتى يوم الاثنين 28 سبتمبر. إذا كنت ترغب في خطط جميلة — الشاطئ أو العشاء أو المشروبات أو الفعاليات أو غير ذلك — راسلني.",
+              timeLabel: "التوقيت في ماربيا" }
       }
     };
 
@@ -791,6 +831,32 @@
           Everything else (chips, carousel, counters) builds itself.
        ============================================================ */
     var TRIPS = [
+  {
+    "id": "marbella",
+    "name": {
+      "en": "Marbella",
+      "de": "Marbella",
+      "fr": "Marbella",
+      "it": "Marbella",
+      "ar": "ماربيا"
+    },
+    "country": {
+      "en": "Spain",
+      "de": "Spanien",
+      "fr": "Espagne",
+      "it": "Spagna",
+      "ar": "إسبانيا"
+    },
+    "photos": [
+      "https://res.cloudinary.com/dqje367sj/image/upload/c_fill,g_auto,ar_4:5,w_680,f_auto,q_auto:good/v1790414849/IMG_0567_wxa4lg.jpg",
+      "https://res.cloudinary.com/dqje367sj/image/upload/c_fill,g_auto,ar_4:5,w_680,f_auto,q_auto:good/v1790414848/IMG_0570_kcap6j.jpg",
+      "https://res.cloudinary.com/dqje367sj/image/upload/c_fill,g_auto,ar_4:5,w_680,f_auto,q_auto:good/v1790414848/IMG_0569_lirobv.jpg",
+      "https://res.cloudinary.com/dqje367sj/image/upload/c_fill,g_auto,ar_4:5,w_680,f_auto,q_auto:good/v1790414848/IMG_0568_qrh05t.jpg",
+      "https://res.cloudinary.com/dqje367sj/image/upload/c_fill,g_auto,ar_4:5,w_680,f_auto,q_auto:good/v1790414848/IMG_0573_npd5it.jpg",
+      "https://res.cloudinary.com/dqje367sj/image/upload/c_fill,g_auto,ar_4:5,w_680,f_auto,q_auto:good/v1790414848/IMG_0571_kbdgom.jpg",
+      "https://res.cloudinary.com/dqje367sj/image/upload/c_fill,g_auto,ar_4:5,w_680,f_auto,q_auto:good/v1790414848/IMG_0572_zrc2bk.jpg"
+    ]
+  },
   {
     "id": "munich",
     "name": {
@@ -918,6 +984,10 @@
     var COPY = {
       en: {
         secondary: "Always down to meet interesting people and discover good places.",
+        nextStopsTitle: "NEXT",
+        nextStopsAria: "Next destinations",
+        lisbonDates: "4–6 Oct 2026",
+        pipaDates: "6 Oct–30 Nov 2026",
         cta: "Text me on WhatsApp",
         ctaAria: "Text me on WhatsApp (opens in a new tab)",
         email: "Email",
@@ -940,6 +1010,10 @@
       },
       de: {
         secondary: "Immer offen dafür, interessante Leute kennenzulernen und gute Orte zu entdecken.",
+        nextStopsTitle: "ALS NÄCHSTES",
+        nextStopsAria: "Nächste Reiseziele",
+        lisbonDates: "4.–6. Okt. 2026",
+        pipaDates: "6. Okt.–30. Nov. 2026",
         cta: "Schreib mir auf WhatsApp",
         ctaAria: "Schreib mir auf WhatsApp (öffnet in neuem Tab)",
         email: "E-Mail",
@@ -962,6 +1036,10 @@
       },
       fr: {
         secondary: "Toujours partant pour rencontrer des personnes intéressantes et découvrir de bonnes adresses.",
+        nextStopsTitle: "ENSUITE",
+        nextStopsAria: "Prochaines destinations",
+        lisbonDates: "4–6 oct. 2026",
+        pipaDates: "6 oct.–30 nov. 2026",
         cta: "Écris-moi sur WhatsApp",
         ctaAria: "Écris-moi sur WhatsApp (ouvre un nouvel onglet)",
         email: "E-mail",
@@ -984,6 +1062,10 @@
       },
       it: {
         secondary: "Sempre disponibile a conoscere persone interessanti e scoprire bei posti.",
+        nextStopsTitle: "PROSSIME TAPPE",
+        nextStopsAria: "Prossime destinazioni",
+        lisbonDates: "4–6 ott 2026",
+        pipaDates: "6 ott–30 nov 2026",
         cta: "Scrivimi su WhatsApp",
         ctaAria: "Scrivimi su WhatsApp (si apre in una nuova scheda)",
         email: "Email",
@@ -1006,6 +1088,10 @@
       },
       ar: {
         secondary: "دائمًا سعيد بالتعرف على أشخاص مثيرين للاهتمام واكتشاف أماكن جميلة.",
+        nextStopsTitle: "المحطات القادمة",
+        nextStopsAria: "الوجهات القادمة",
+        lisbonDates: "4–6 أكتوبر 2026",
+        pipaDates: "6 أكتوبر–30 نوفمبر 2026",
         cta: "راسلني على واتساب",
         ctaAria: "راسلني على واتساب (يفتح في علامة تبويب جديدة)",
         email: "البريد الإلكتروني",
