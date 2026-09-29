@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#060606">
-<meta name="description" content="Elias — currently in Marbella / Málaga, then Lisbon and Pipa. Text me.">
+<meta name="description" content="Elias — currently in Oslo, then Lisbon and Pipa. Text me.">
 <title>Where's Elias</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -666,7 +666,7 @@
       <div class="status">
         <p class="eyebrow">
           <span class="dot" aria-hidden="true"></span>
-          <span data-i18n="eyebrow">MARBELLA · UNTIL MONDAY</span>
+          <span data-i18n="eyebrow">OSLO · UNTIL SUNDAY</span>
         </p>
         <button class="skin" id="skin" type="button" aria-label="Switch to light mode">
           <svg class="sun" width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true">
@@ -690,9 +690,9 @@
         </div>
       </section>
 
-      <h1 class="heading" data-i18n="heading">I&rsquo;m in Marbella.</h1>
+      <h1 class="heading" data-i18n="heading">I&rsquo;m in Oslo.</h1>
 
-      <p class="lede" data-i18n="body">Around Marbella and Málaga until Monday, 28 September. If you want to make some nice plans — beach, dinner, drinks, events or whatever — text me.</p>
+      <p class="lede" data-i18n="body">In Oslo until Sunday, 4 October. If you want to make some nice plans — coffee, dinner, drinks, events or whatever — text me.</p>
 
       <p class="secondary" data-i18n="secondary">Always down to meet interesting people and discover good places.</p>
 
@@ -765,7 +765,7 @@
 
       <div class="foot">
         <p class="clock">
-          <span data-i18n="timeLabel">Marbella time</span>
+          <span data-i18n="timeLabel">Oslo time</span>
           <time id="clock" datetime="">&mdash;</time>
         </p>
         <div class="langs" role="group" id="langs" aria-label="Language">
@@ -799,28 +799,28 @@
           and the "<city> time" label.
        ============================================================ */
     var NOW = {
-      tz: "Europe/Madrid",
+      tz: "Europe/Oslo",
       copy: {
-        en: { eyebrow: "MARBELLA · UNTIL MONDAY",
-              heading: "I’m in Marbella.",
-              body: "Around Marbella and Málaga until Monday, 28 September. If you want to make some nice plans — beach, dinner, drinks, events or whatever — text me.",
-              timeLabel: "Marbella time" },
-        de: { eyebrow: "MARBELLA · BIS MONTAG",
-              heading: "Ich bin in Marbella.",
-              body: "Bis Montag, 28. September, bin ich in Marbella und Málaga. Wenn du Lust auf gute Pläne hast — Strand, Dinner, Drinks, Events oder was auch immer — schreib mir.",
-              timeLabel: "Uhrzeit in Marbella" },
-        fr: { eyebrow: "MARBELLA · JUSQU’À LUNDI",
-              heading: "Je suis à Marbella.",
-              body: "Je suis entre Marbella et Málaga jusqu’au lundi 28 septembre. Si tu veux faire des plans sympas — plage, dîner, verres, événements ou autre — écris-moi.",
-              timeLabel: "Heure à Marbella" },
-        it: { eyebrow: "MARBELLA · FINO A LUNEDÌ",
-              heading: "Sono a Marbella.",
-              body: "Sono tra Marbella e Málaga fino a lunedì 28 settembre. Se ti va di fare qualcosa di bello — spiaggia, cena, drink, eventi o altro — scrivimi.",
-              timeLabel: "Ora di Marbella" },
-        ar: { eyebrow: "ماربيا · حتى يوم الاثنين",
-              heading: "أنا في ماربيا.",
-              body: "سأكون بين ماربيا ومالقة حتى يوم الاثنين 28 سبتمبر. إذا كنت ترغب في خطط جميلة — الشاطئ أو العشاء أو المشروبات أو الفعاليات أو غير ذلك — راسلني.",
-              timeLabel: "التوقيت في ماربيا" }
+        en: { eyebrow: "OSLO · UNTIL SUNDAY",
+              heading: "I’m in Oslo.",
+              body: "In Oslo until Sunday, 4 October. If you want to make some nice plans — coffee, dinner, drinks, events or whatever — text me.",
+              timeLabel: "Oslo time" },
+        de: { eyebrow: "OSLO · BIS SONNTAG",
+              heading: "Ich bin in Oslo.",
+              body: "Ich bin bis Sonntag, 4. Oktober, in Oslo. Wenn du Lust auf gute Pläne hast — Kaffee, Dinner, Drinks, Events oder was auch immer — schreib mir.",
+              timeLabel: "Uhrzeit in Oslo" },
+        fr: { eyebrow: "OSLO · JUSQU’À DIMANCHE",
+              heading: "Je suis à Oslo.",
+              body: "Je suis à Oslo jusqu’au dimanche 4 octobre. Si tu veux faire des plans sympas — café, dîner, verres, événements ou autre — écris-moi.",
+              timeLabel: "Heure à Oslo" },
+        it: { eyebrow: "OSLO · FINO A DOMENICA",
+              heading: "Sono a Oslo.",
+              body: "Sono a Oslo fino a domenica 4 ottobre. Se ti va di fare qualcosa di bello — caffè, cena, drink, eventi o altro — scrivimi.",
+              timeLabel: "Ora di Oslo" },
+        ar: { eyebrow: "أوسلو · حتى يوم الأحد",
+              heading: "أنا في أوسلو.",
+              body: "سأكون في أوسلو حتى يوم الأحد 4 أكتوبر. إذا كنت ترغب في خطط جميلة — قهوة أو عشاء أو مشروبات أو فعاليات أو غير ذلك — راسلني.",
+              timeLabel: "التوقيت في أوسلو" }
       }
     };
 
@@ -831,6 +831,27 @@
           Everything else (chips, carousel, counters) builds itself.
        ============================================================ */
     var TRIPS = [
+  {
+    "id": "oslo",
+    "name": {
+      "en": "Oslo",
+      "de": "Oslo",
+      "fr": "Oslo",
+      "it": "Oslo",
+      "ar": "أوسلو"
+    },
+    "country": {
+      "en": "Norway",
+      "de": "Norwegen",
+      "fr": "Norvège",
+      "it": "Norvegia",
+      "ar": "النرويج"
+    },
+    "photos": [
+      "https://res.cloudinary.com/dqje367sj/image/upload/c_fill,g_auto,ar_4:5,w_680,f_auto,q_auto:good/v1790689112/IMG_0623_gaddng.jpg",
+      "https://res.cloudinary.com/dqje367sj/image/upload/c_fill,g_auto,ar_4:5,w_680,f_auto,q_auto:good/v1790689116/IMG_0632_czpkrz.jpg"
+    ]
+  },
   {
     "id": "marbella",
     "name": {
@@ -854,7 +875,10 @@
       "https://res.cloudinary.com/dqje367sj/image/upload/c_fill,g_auto,ar_4:5,w_680,f_auto,q_auto:good/v1790414848/IMG_0568_qrh05t.jpg",
       "https://res.cloudinary.com/dqje367sj/image/upload/c_fill,g_auto,ar_4:5,w_680,f_auto,q_auto:good/v1790414848/IMG_0573_npd5it.jpg",
       "https://res.cloudinary.com/dqje367sj/image/upload/c_fill,g_auto,ar_4:5,w_680,f_auto,q_auto:good/v1790414848/IMG_0571_kbdgom.jpg",
-      "https://res.cloudinary.com/dqje367sj/image/upload/c_fill,g_auto,ar_4:5,w_680,f_auto,q_auto:good/v1790414848/IMG_0572_zrc2bk.jpg"
+      "https://res.cloudinary.com/dqje367sj/image/upload/c_fill,g_auto,ar_4:5,w_680,f_auto,q_auto:good/v1790414848/IMG_0572_zrc2bk.jpg",
+      "https://res.cloudinary.com/dqje367sj/image/upload/c_fill,g_auto,ar_4:5,w_680,f_auto,q_auto:good/v1790689137/IMG_0700_riqgrl.jpg",
+      "https://res.cloudinary.com/dqje367sj/image/upload/c_fill,g_auto,ar_4:5,w_680,f_auto,q_auto:good/v1790689120/IMG_0745_eoup9y.jpg",
+      "https://res.cloudinary.com/dqje367sj/image/upload/c_fill,g_auto,ar_4:5,w_680,f_auto,q_auto:good/v1790689099/IMG_0764_hmea01.jpg"
     ]
   },
   {
